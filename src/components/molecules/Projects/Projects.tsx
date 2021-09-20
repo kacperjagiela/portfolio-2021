@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/layout';
 import { Section } from '~/components/atoms';
 
 const Projects: React.FC = () => (
-    <Box bg="background.secondary" py={['120px']}>
+    <Box bg="background.secondary" py={['120px']} as="section">
         <Section>
             <Box as="h2" textStyle="h2">
                 Recent <br />

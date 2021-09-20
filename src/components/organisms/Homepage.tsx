@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@chakra-ui/layout';
 
-import { Footer, Hero, Navbar, Projects, WorkExperience } from '~/components/molecules';
+import { About, Footer, Hero, Navbar, Projects, WorkExperience } from '~/components/molecules';
 
 const Homepage: React.FC = () => {
     return (
@@ -10,6 +10,7 @@ const Homepage: React.FC = () => {
             <Hero />
             <WorkExperience />
             <Projects />
+            <About />
             <Footer />
         </Box>
     );
