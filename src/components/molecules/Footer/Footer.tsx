@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Spacer, Text } from '@chakra-ui/layout';
+import { Box, Divider, Flex, Link, Spacer, Text } from '@chakra-ui/layout';
 
 import { Section } from '~/components/atoms';
 
@@ -20,8 +20,14 @@ const Footer: React.FC = () => (
                 </Box>
             </Flex>
             <Divider />
-            <Text as="h5" textStyle="h5" py={[10]} textAlign="center">
+            <Text as="h5" textStyle="h5" pt={[10]} textAlign="center">
                 Developed by me 😁{' '}
+            </Text>
+            <Text as="h5" textStyle="h5" pb={[10]} textAlign="center">
+                Designed by{' '}
+                <Link textDecoration="underline" href="https://dribbble.com/uiuxmaciej" _focus={{ border: 'none' }}>
+                    Maciej Gutkowski
+                </Link>
             </Text>
         </Section>
     </Box>
