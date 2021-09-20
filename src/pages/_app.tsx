@@ -22,19 +22,19 @@ const theme = extendTheme({
             fontSize: ['36px', '120px'],
             fontWeight: 'normal',
             lineHeight: ['40px', '128px'],
-            letterSpacing: '-5%',
+            letterSpacing: '-0.05em',
         },
         h2: {
             fontSize: ['32px', '64px'],
             fontWeight: 'normal',
             lineHeight: ['40px', '72px'],
-            letterSpacing: '-5%',
+            letterSpacing: '-0.05em',
         },
         h3: {
             fontSize: ['24px', '36px'],
             fontWeight: 'normal',
             lineHeight: ['32px', '48px'],
-            letterSpacing: '-5%',
+            letterSpacing: '-0.05em',
         },
         h4: {
             fontSize: ['16px', '20px'],
@@ -51,6 +51,9 @@ const theme = extendTheme({
             fontWeight: 'normal',
             lineHeight: ['24px', '32px'],
         },
+    },
+    breakpoints: {
+        xxl: '1920px',
     },
     sizes: {
         container: {
