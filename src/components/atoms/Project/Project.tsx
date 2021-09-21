@@ -9,9 +9,10 @@ type Props = {
     name: string;
     tags: string[];
     link: string;
+    layout: any;
 };
 
-const Project: React.FC<Props> = ({ link, imageSrc, size, name, tags }: Props) => {
+const Project: React.FC<Props> = ({ link, imageSrc, size, name, tags, layout }: Props) => {
     let width = 768;
     let height;
 
@@ -25,10 +26,10 @@ const Project: React.FC<Props> = ({ link, imageSrc, size, name, tags }: Props) =
     }
 
     return (
-        <Box w="fit-content">
+        <Box w={['full', 'fit-content']}>
             <Link href={link} _hover={{ textDecoration: 'none' }} _focus={{ border: 'none' }}>
-                <Image src={imageSrc} alt={name} loading="lazy" width={width} height={height} />
-                <Flex alignItems="center" pt={[12]} pb={[2]}>
+                <Image src={imageSrc} alt={name} loading="lazy" width={width} height={height} layout={layout} />
+                <Flex alignItems="center" pt={['20px', 12]} pb={[2]}>
                     <Text as="h3" textStyle="h3" my="0px">
                         {name}
                     </Text>
