@@ -5,7 +5,7 @@ import Homepage from '~/components/organisms/Homepage';
 
 const Home: NextPage = () => {
     return (
-        <html>
+        <>
             <Head>
                 <title>Kacper Jagieła Portfolio</title>
                 <meta name="description" content="Portfolio by Kacper Jagieła" />
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
                 <meta name="theme-color" content="#e5e5e5"></meta>
             </Head>
             <Homepage />
-        </html>
+        </>
     );
 };
 

@@ -5,7 +5,7 @@ import { About, Footer, Hero, Navbar, Projects, WorkExperience } from '~/compone
 
 const Homepage: React.FC = () => {
     return (
-        <Box color="typography.main">
+        <Box color="typography.main" position="relative">
             <Navbar />
             <Hero />
             <WorkExperience />

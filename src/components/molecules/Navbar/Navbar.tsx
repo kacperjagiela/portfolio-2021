@@ -3,8 +3,8 @@ import { Box, Flex, Spacer, Stack } from '@chakra-ui/layout';
 import { IconBrand, Section } from '~/components/atoms';
 
 const Navbar: React.FC = () => (
-    <Section as={'nav'}>
-        <Flex mt="10" alignItems="center">
+    <Section as="nav">
+        <Flex my="6" alignItems="center">
             <a href="#">
                 <IconBrand />
             </a>

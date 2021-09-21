@@ -9,7 +9,7 @@ const ExperienceAccordion: React.FC = () => (
                     bg="transparent"
                     border="0px"
                     p="0px"
-                    _hover={{ backgroundColor: 'transparent' }}
+                    _hover={{ backgroundColor: 'transparent', cursor: 'pointer' }}
                     _expanded={{ backgroundColor: 'transparent' }}
                     _focus={{ backgroundColor: 'transparent' }}
                 >
@@ -40,7 +40,7 @@ const ExperienceAccordion: React.FC = () => (
                     bg="transparent"
                     border="0px"
                     p="0px"
-                    _hover={{ backgroundColor: 'transparent' }}
+                    _hover={{ backgroundColor: 'transparent', cursor: 'pointer' }}
                     _expanded={{ backgroundColor: 'transparent' }}
                     _focus={{ backgroundColor: 'transparent' }}
                 >

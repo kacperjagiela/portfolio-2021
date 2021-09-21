@@ -4,9 +4,10 @@ import { Container } from '@chakra-ui/layout';
 type Props = {
     children?: any | any[];
     as?: any;
+    position?: any;
 };
 
-const Section: React.FC<Props> = ({ children, as }: Props) => {
+const Section: React.FC<Props> = ({ children, as, position }: Props) => {
     return (
         <Container
             maxW={[
@@ -20,6 +21,7 @@ const Section: React.FC<Props> = ({ children, as }: Props) => {
             ]}
             px="0"
             as={as || 'div'}
+            position={position || 'unset'}
         >
             {children}
         </Container>
