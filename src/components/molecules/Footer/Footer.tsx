@@ -17,13 +17,15 @@ const Footer: React.FC = () => (
                     together 👋
                 </Box>
                 <Spacer />
-                <Box as="h3" textStyle="h3" my="0px">
+                <Text as="h3" textStyle="h3" my="0px">
                     jagielakacper80@gmail.com <br />
-                    <Text w="fit-content" as="span" color="typography.tertiary">
-                        +48
-                    </Text>{' '}
-                    783 890 500
-                </Box>
+                    <Text as="h3" textStyle="h3" my="0px" mt={[4, 0]}>
+                        <Text w="fit-content" as="span" color="typography.tertiary">
+                            +48
+                        </Text>{' '}
+                        783 890 500
+                    </Text>
+                </Text>
             </Flex>
             <Divider m="0" />
             <Text as="h5" textStyle="h5" pt={[10]} pb={[4]} textAlign="center" my="0px">

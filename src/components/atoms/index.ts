@@ -6,3 +6,4 @@ export * from './IconGithub';
 export * from './IconGmail';
 export * from './IconLinkedin';
 export * from './IconHamburger';
+export * from './IconX';
