@@ -3,7 +3,7 @@ import { Box, Divider, Flex, Link, Spacer, Text } from '@chakra-ui/layout';
 import { Section } from '~/components/atoms';
 
 const Footer: React.FC = () => (
-    <Box bg="background.secondary" pt={['120px']}>
+    <Box bg="background.secondary" pt={['120px']} id="footer">
         <Section>
             <Flex flex="1" alignItems="center">
                 <Box as="h2" textStyle="h2" my="0px">

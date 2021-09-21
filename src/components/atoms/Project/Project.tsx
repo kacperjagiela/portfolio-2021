@@ -26,34 +26,34 @@ const Project: React.FC<Props> = ({ link, imageSrc, size, name, tags }: Props) =
 
     return (
         <Box w="fit-content">
-            <Link href={link}>
-                <Image src={imageSrc} alt={name} width={width} height={height} />
+            <Link href={link} _hover={{ textDecoration: 'none' }} _focus={{ border: 'none' }}>
+                <Image src={imageSrc} alt={name} loading="lazy" width={width} height={height} />
+                <Flex alignItems="center" pt={[12]} pb={[2]}>
+                    <Text as="h3" textStyle="h3" my="0px">
+                        {name}
+                    </Text>
+                    <Spacer />
+                    <IconArrowRight />
+                </Flex>
+                <Stack direction="row" spacing="4">
+                    {tags.map((tag) => (
+                        <Box
+                            key={name + '-' + tag}
+                            px={[6]}
+                            py={[3]}
+                            my="0px"
+                            as="h5"
+                            textStyle="h5"
+                            color="typography.tertiary"
+                            border="1px"
+                            borderRadius="99px"
+                            borderColor="typography.stroke"
+                        >
+                            {tag}
+                        </Box>
+                    ))}
+                </Stack>
             </Link>
-            <Flex alignItems="center">
-                <Text as="h3" textStyle="h3">
-                    {name}
-                </Text>
-                <Spacer />
-                <IconArrowRight />
-            </Flex>
-            <Stack direction="row" spacing="4">
-                {tags.map((tag) => (
-                    <Box
-                        key={name + '-' + tag}
-                        px={[6]}
-                        py={[3]}
-                        my="0px"
-                        as="h5"
-                        textStyle="h5"
-                        color="typography.tertiary"
-                        border="1px"
-                        borderRadius="99px"
-                        borderColor="typography.stroke"
-                    >
-                        {tag}
-                    </Box>
-                ))}
-            </Stack>
         </Box>
     );
 };

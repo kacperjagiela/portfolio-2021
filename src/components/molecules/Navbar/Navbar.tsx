@@ -15,10 +15,10 @@ const Navbar: React.FC = () => (
                         <a href="#portfolio">Portfolio</a>
                     </Box>
                     <Box as="h5" textStyle="h5">
-                        <a href="#portfolio">About me</a>
+                        <a href="#about">About me</a>
                     </Box>
                     <Box as="h5" textStyle="h5">
-                        <a href="#portfolio">Let’s get in touch</a>
+                        <a href="#footer">Let’s get in touch</a>
                     </Box>
                 </Stack>
             </Box>

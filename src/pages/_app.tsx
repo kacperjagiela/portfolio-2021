@@ -5,6 +5,11 @@ import type { AppProps } from 'next/app';
 import '../../styles/globals.css';
 
 const theme = extendTheme({
+    fonts: {
+        body: 'Kumbh Sans, sans-serif',
+        heading: 'Kumbh Sans, sans-serif',
+        mono: 'Kumbh Sans, sans-serif',
+    },
     colors: {
         background: {
             main: '#FFFFFF',
@@ -22,19 +27,19 @@ const theme = extendTheme({
             fontSize: ['36px', '120px'],
             fontWeight: 'normal',
             lineHeight: ['40px', '128px'],
-            letterSpacing: '-0.05em',
+            letterSpacing: '-0.05rem',
         },
         h2: {
             fontSize: ['32px', '64px'],
             fontWeight: 'normal',
             lineHeight: ['40px', '72px'],
-            letterSpacing: '-0.05em',
+            letterSpacing: '-0.05rem',
         },
         h3: {
             fontSize: ['24px', '36px'],
             fontWeight: 'normal',
             lineHeight: ['32px', '48px'],
-            letterSpacing: '-0.05em',
+            letterSpacing: '-0.05rem',
         },
         h4: {
             fontSize: ['16px', '20px'],
