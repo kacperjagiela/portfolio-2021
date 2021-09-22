@@ -38,13 +38,7 @@ const Project: React.FC<Props> = ({ link, imageSrc, size = 'small', name, tags }
                     maxW={['500px', null, null, null, '590px', 'container.md']}
                     position="relative"
                 >
-                    <Image
-                        src={imageSrc}
-                        onLoadingComplete={() => console.log(name)}
-                        alt={name}
-                        loading="eager"
-                        layout="fill"
-                    />
+                    <Image src={imageSrc} alt={name} loading="eager" layout="fill" />
                 </Box>
                 <Flex alignItems="center" pt={['20px', 12]} pb={[2]}>
                     <Text as="h3" textStyle="h3" my="0px">

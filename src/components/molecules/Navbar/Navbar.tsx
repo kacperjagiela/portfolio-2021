@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
                                     </Text>
                                     <Text as="h3" textStyle="h3" my="0px">
                                         jagielakacper80@gmail.com <br />
-                                        <Text as="h3" textStyle="h3" my="0px" mt="4">
+                                        <Text textStyle="h3" my="0px" mt="4">
                                             <Text w="fit-content" as="span" color="typography.tertiary">
                                                 +48
                                             </Text>{' '}

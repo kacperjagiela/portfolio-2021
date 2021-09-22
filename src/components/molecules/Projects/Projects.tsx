@@ -7,8 +7,6 @@ import Project from '~/components/atoms/Project/Project';
 const Projects: React.FC = () => {
     const [isDesktop] = useMediaQuery('(min-width: 1280px)');
 
-    console.log(isDesktop);
-
     return (
         <Box bg="background.secondary" py={[16, '120px']} as="section" id="portfolio">
             <Section>
