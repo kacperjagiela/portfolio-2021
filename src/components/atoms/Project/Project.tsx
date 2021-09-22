@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Image } from '@chakra-ui/image';
 import { Box, Flex, Link, Spacer, Stack, Text } from '@chakra-ui/layout';
-import Image from 'next/image';
 
 import { IconArrowRight } from '..';
 
@@ -30,7 +30,7 @@ const Project: React.FC<Props> = ({ link, imageSrc, size = 'small', name, tags }
     }, [size]);
 
     return (
-        <Box w={['full', 'fit-content']}>
+        <Box w={['full']}>
             <Link href={link} _hover={{ textDecoration: 'none' }} _focus={{ border: 'none' }}>
                 <Box
                     w={['full', null, null, width]}
@@ -38,7 +38,7 @@ const Project: React.FC<Props> = ({ link, imageSrc, size = 'small', name, tags }
                     maxW={['500px', null, null, null, '590px', 'container.md']}
                     position="relative"
                 >
-                    <Image src={imageSrc} alt={name} loading="eager" layout="fill" />
+                    <Image src={imageSrc} align="center" w="full" h="full" alt={name} fit="cover" loading="eager" />
                 </Box>
                 <Flex alignItems="center" pt={['20px', 12]} pb={[2]}>
                     <Text as="h3" textStyle="h3" my="0px">
