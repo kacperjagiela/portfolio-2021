@@ -28,9 +28,10 @@ const ExperienceAccordion: React.FC = () => (
                 </AccordionButton>
             </Heading>
             <AccordionPanel pt={[8]} pb="0px" px="0px" textStyle="body" color="typography.secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+                Developing SaaS application from scratch using React, Redux, and Material UI in agile methodology. Wrote
+                unit tests with React Testing Library and Jest as a test runner. Implementing frontend integration with
+                REST API. Have hands-on experience with deploying applications with Docker on DigitalOcean droplets.
+                Started developing a new backend in Domain-Driven Design using NestJS and Prisma.
             </AccordionPanel>
         </AccordionItem>
 

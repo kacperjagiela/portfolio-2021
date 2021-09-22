@@ -41,7 +41,11 @@ const About: React.FC = () => (
                 />
             </Flex>
             <Text as="h4" textStyle="h4" my="0px" color="typography.secondary" position="relative" zIndex="1">
-                I am a passionate full-stack developer focused on improving my skills everyday, a
+                I am a passionate full-stack developer focused on improving my skills every day. When developing apps, I
+                keep my focus on future users and their needs. Always trying to find better and faster solutions to
+                problems I am currently facing is the reason I love to code. Working in a team is as natural for me as
+                breathing. In my free time, I like to challenge myself with Game development. As a hobby, I enjoy chess
+                and playing VR games.
             </Text>
         </Section>
     </Box>

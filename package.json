@@ -8,11 +8,8 @@
         "start": "next start",
         "lint": "eslint --ext .js,.ts,.tsx --quiet --fix",
         "prettify": "prettier --write .",
-        "storybook": "start-storybook -p 6006 -s ./public",
         "build-storybook": "build-storybook",
-        "type-check": "tsc --pretty --noEmit",
-        "test": "jest --runInBand --config .jest/config.json",
-        "test-watch": "jest --runInBand --config .jest/config.json --watch"
+        "type-check": "tsc --pretty --noEmit"
     },
     "dependencies": {
         "@chakra-ui/react": "^1.6.7",
