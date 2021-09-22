@@ -18,37 +18,37 @@ const Projects: React.FC = () => {
                         </Box>
                         <Box pb={[0, '82px']}>
                             <Project
-                                name="Porvalo App"
-                                imageSrc="/images/placeholder.png"
+                                name="QA App"
+                                imageSrc="/images/qa-app.png"
                                 size={isDesktop ? 'small' : 'mobile'}
-                                tags={['React', 'TypeScript', 'Node.js']}
-                                link="#"
+                                tags={['JavaScript', 'Node.js', 'MongoDB']}
+                                link="https://kacperjagiela.github.io/qa-app-mongodb/#/"
                             />
                         </Box>
                         <Project
-                            name="Porvalo App"
-                            imageSrc="/images/placeholder.png"
+                            name="This portfolio 😁"
+                            imageSrc="/images/portfolio-2021.png"
                             size={isDesktop ? 'large' : 'mobile'}
-                            tags={['React', 'TypeScript', 'Node.js']}
-                            link="#"
+                            tags={['React', 'TypeScript', 'Chakra UI']}
+                            link="https://github.com/kacperjagiela/portfolio-2021"
                         />
                     </Stack>
                     <Stack direction={['column']} pt={[0, 16]} spacing={[12, 0]}>
                         <Box pb={[0, '82px']}>
                             <Project
-                                name="Porvalo App"
-                                imageSrc="/images/placeholder.png"
+                                name="Neovilla.pl"
+                                imageSrc="/images/neovilla.png"
                                 size={isDesktop ? 'large' : 'mobile'}
-                                tags={['React', 'TypeScript', 'Node.js']}
-                                link="#"
+                                tags={['Bootstrap', 'HTML5', 'JavaScript']}
+                                link="https://neovilla.pl/#strona-glowna"
                             />
                         </Box>
                         <Project
-                            name="Porvalo App"
+                            name="Weather App"
                             imageSrc="/images/placeholder.png"
                             size={isDesktop ? 'small' : 'mobile'}
-                            tags={['React', 'TypeScript', 'Node.js']}
-                            link="#"
+                            tags={['React', 'JavaScript']}
+                            link="https://kacperjagiela.github.io/weather-app/#/"
                         />
                     </Stack>
                 </Stack>

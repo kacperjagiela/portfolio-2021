@@ -41,12 +41,7 @@ const About: React.FC = () => (
                 />
             </Flex>
             <Text as="h4" textStyle="h4" my="0px" color="typography.secondary" position="relative" zIndex="1">
-                Egestas eu tristique faucibus turpis vitae nibh. Dui ultrices sed odio sagittis dui sit purus maecenas.
-                Pretium ipsum ac, egestas lacus, enim. Sed accumsan vitae lectus quis non vulputate felis odio nec.
-                Auctor id justo neque pellentesque. Scelerisque lectus varius dui fringilla consequat.Proin eget sodales
-                faucibus sit arcu. Est ut tristique integer ipsum dui. Non mi vitae mi arcu adipiscing. Donec pulvinar
-                sed aliquet duis. Velit dictumst justo nunc nunc, purus. Mattis posuere egestas tincidunt vitae nisl
-                enim, in enim eget. Ornare eget arcu lectus quis sit tincidunt libero. Id pharetra tortor at amet.
+                I am a passionate full-stack developer focused on improving my skills everyday, a
             </Text>
         </Section>
     </Box>
