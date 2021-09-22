@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Box, Flex, Link, Spacer, Stack, Text } from '@chakra-ui/layout';
 import Image from 'next/image';
 
@@ -9,26 +10,42 @@ type Props = {
     name: string;
     tags: string[];
     link: string;
-    layout: any;
 };
 
-const Project: React.FC<Props> = ({ link, imageSrc, size, name, tags, layout }: Props) => {
-    let width = 768;
-    let height;
+const Project: React.FC<Props> = ({ link, imageSrc, size = 'small', name, tags }: Props) => {
+    const [width, setWidth] = useState('768px');
+    const [height, setHeight] = useState('724px');
 
-    if (size === 'large') {
-        height = 724;
-    } else if (size === 'small') {
-        height = 478;
-    } else {
-        width = 320;
-        height = 220;
-    }
+    useEffect(() => {
+        if (size === 'large') {
+            setWidth('768px');
+            setHeight('724px');
+        } else if (size === 'small') {
+            setWidth('768px');
+            setHeight('478px');
+        } else if (size === 'mobile') {
+            setWidth('full');
+            setHeight('220px');
+        }
+    }, [size]);
 
     return (
         <Box w={['full', 'fit-content']}>
             <Link href={link} _hover={{ textDecoration: 'none' }} _focus={{ border: 'none' }}>
-                <Image src={imageSrc} alt={name} loading="lazy" width={width} height={height} layout={layout} />
+                <Box
+                    w={['full', null, null, width]}
+                    h={height}
+                    maxW={['500px', null, null, null, '590px', 'container.md']}
+                    position="relative"
+                >
+                    <Image
+                        src={imageSrc}
+                        onLoadingComplete={() => console.log(name)}
+                        alt={name}
+                        loading="eager"
+                        layout="fill"
+                    />
+                </Box>
                 <Flex alignItems="center" pt={['20px', 12]} pb={[2]}>
                     <Text as="h3" textStyle="h3" my="0px">
                         {name}
@@ -36,12 +53,12 @@ const Project: React.FC<Props> = ({ link, imageSrc, size, name, tags, layout }: 
                     <Spacer />
                     <IconArrowRight />
                 </Flex>
-                <Stack direction="row" spacing="4">
+                <Stack direction="row" spacing={[2, 4]}>
                     {tags.map((tag) => (
                         <Box
                             key={name + '-' + tag}
-                            px={[6]}
-                            py={[3]}
+                            px={[3, 6]}
+                            py={[2, 3]}
                             my="0px"
                             as="h5"
                             textStyle="h5"

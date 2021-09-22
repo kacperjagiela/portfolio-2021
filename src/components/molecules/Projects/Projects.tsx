@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
     return (
         <Box bg="background.secondary" py={[16, '120px']} as="section" id="portfolio">
             <Section>
-                <Stack direction={['column', 'row']} spacing={[12, 16]}>
+                <Stack direction={['column', 'row']} spacing={[12, null, null, 'auto', null, 16]}>
                     <Stack direction={['column']} spacing={[12, 0]}>
                         <Box as="h2" textStyle="h2" my="0px" textAlign="left" pb={[0, '166px']}>
                             Recent <br />
@@ -24,7 +24,6 @@ const Projects: React.FC = () => {
                                 imageSrc="/images/placeholder.png"
                                 size={isDesktop ? 'small' : 'mobile'}
                                 tags={['React', 'TypeScript', 'Node.js']}
-                                layout={isDesktop ? 'fixed' : 'responsive'}
                                 link="#"
                             />
                         </Box>
@@ -33,7 +32,6 @@ const Projects: React.FC = () => {
                             imageSrc="/images/placeholder.png"
                             size={isDesktop ? 'large' : 'mobile'}
                             tags={['React', 'TypeScript', 'Node.js']}
-                            layout={isDesktop ? 'fixed' : 'responsive'}
                             link="#"
                         />
                     </Stack>
@@ -44,7 +42,6 @@ const Projects: React.FC = () => {
                                 imageSrc="/images/placeholder.png"
                                 size={isDesktop ? 'large' : 'mobile'}
                                 tags={['React', 'TypeScript', 'Node.js']}
-                                layout={isDesktop ? 'fixed' : 'responsive'}
                                 link="#"
                             />
                         </Box>
@@ -53,7 +50,6 @@ const Projects: React.FC = () => {
                             imageSrc="/images/placeholder.png"
                             size={isDesktop ? 'small' : 'mobile'}
                             tags={['React', 'TypeScript', 'Node.js']}
-                            layout={isDesktop ? 'fixed' : 'responsive'}
                             link="#"
                         />
                     </Stack>

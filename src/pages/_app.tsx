@@ -24,37 +24,37 @@ const theme = extendTheme({
     },
     textStyles: {
         h1: {
-            fontSize: ['36px', '120px'],
+            fontSize: ['36px', '40px', '64px', '80px', '96px', '120px'],
             fontWeight: 'normal',
-            lineHeight: ['40px', '128px'],
+            lineHeight: ['40px', '64px', '88px', '128px'],
             letterSpacing: '-0.05rem',
         },
         h2: {
-            fontSize: ['32px', '64px'],
+            fontSize: ['32px', '36px', '40px', '44px', '48px', '64px'],
             fontWeight: 'normal',
-            lineHeight: ['40px', '72px'],
+            lineHeight: ['40px', '48px', '56px', '64px', '72px'],
             letterSpacing: '-0.05rem',
         },
         h3: {
-            fontSize: ['24px', '36px'],
+            fontSize: ['24px', null, null, '30px', null, '36px'],
             fontWeight: 'normal',
             lineHeight: ['32px', '48px'],
             letterSpacing: '-0.05rem',
         },
         h4: {
-            fontSize: ['16px', '20px'],
+            fontSize: ['16px', null, null, null, null, '20px'],
             fontWeight: 'normal',
             lineHeight: ['32px', '32px'],
         },
         h5: {
-            fontSize: ['14px', '16px'],
+            fontSize: ['14px', null, null, null, null, '16px'],
             fontWeight: 'normal',
-            lineHeight: ['20px', '20px'],
+            lineHeight: ['20px', null, null, null, null, '20px'],
         },
         body: {
             fontSize: ['14px', '16px'],
             fontWeight: 'normal',
-            lineHeight: ['24px', '32px'],
+            lineHeight: ['24px', null, null, null, null, '32px'],
         },
     },
     breakpoints: {

@@ -4,7 +4,13 @@ import { IconGithub, IconGmail, IconLinkedin } from '~/components/atoms';
 
 const LinksMobile: React.FC = () => (
     <Stack direction="row" flex="1" justifyContent="center" spacing="8" pt="12">
-        <Link href="https://github.com/kacperjagiela" w="fit-content" _focus={{ border: 'none' }}>
+        <Link
+            href="https://github.com/kacperjagiela"
+            w="fit-content"
+            position="relative"
+            zIndex="1"
+            _focus={{ border: 'none' }}
+        >
             <Box>
                 <IconGithub />
             </Box>

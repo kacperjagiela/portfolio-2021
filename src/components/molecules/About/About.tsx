@@ -1,14 +1,46 @@
-import { Box, Text } from '@chakra-ui/layout';
+import { Box, Flex, Spacer, Text } from '@chakra-ui/layout';
 
 import { Section } from '~/components/atoms';
 
 const About: React.FC = () => (
-    <Box py={[16, '120px']} id="about">
-        <Section as="section">
-            <Text as="h2" textStyle="h2" my="0px" pb={[10]}>
-                About me
-            </Text>
-            <Text as="h4" textStyle="h4" my="0px" color="typography.secondary">
+    <Box py={[16, '120px']} id="about" overflow="hidden">
+        <Section as="section" position="relative">
+            <Flex flexDirection="row">
+                <Box
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    _before={{
+                        content: `""`,
+                        position: 'absolute',
+                        backgroundColor: 'transparent',
+                        border: '1px solid #EEE',
+                        borderRadius: '100rem',
+                        pointerEvents: 'none',
+                        width: '40em',
+                        height: '40em',
+                    }}
+                />
+                <Text as="h2" textStyle="h2" my="0px" pb={[10]} position="relative" zIndex="1">
+                    About me
+                </Text>
+                <Spacer />
+                <Box
+                    w={[10, 40]}
+                    display={['none', 'flex']}
+                    _before={{
+                        content: `""`,
+                        position: 'absolute',
+                        backgroundColor: 'transparent',
+                        border: '1px solid #EEE',
+                        borderRadius: '100rem',
+                        pointerEvents: 'none',
+                        width: '25em',
+                        height: '25em',
+                    }}
+                />
+            </Flex>
+            <Text as="h4" textStyle="h4" my="0px" color="typography.secondary" position="relative" zIndex="1">
                 Egestas eu tristique faucibus turpis vitae nibh. Dui ultrices sed odio sagittis dui sit purus maecenas.
                 Pretium ipsum ac, egestas lacus, enim. Sed accumsan vitae lectus quis non vulputate felis odio nec.
                 Auctor id justo neque pellentesque. Scelerisque lectus varius dui fringilla consequat.Proin eget sodales
