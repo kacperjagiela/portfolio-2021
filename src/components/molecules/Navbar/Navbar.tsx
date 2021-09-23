@@ -1,5 +1,5 @@
 import { useDisclosure } from '@chakra-ui/hooks';
-import { Box, Divider, Flex, Spacer, Stack, Text } from '@chakra-ui/layout';
+import { Box, Divider, Flex, Link, Spacer, Stack, Text } from '@chakra-ui/layout';
 import { useMediaQuery } from '@chakra-ui/media-query';
 import { Portal } from '@chakra-ui/portal';
 import { Slide } from '@chakra-ui/transition';
@@ -55,12 +55,16 @@ const Navbar: React.FC = () => {
                                 px="4"
                             >
                                 <Stack spacing="12">
-                                    <Text as="h3" textStyle="h3" my="0">
-                                        Portfolio
-                                    </Text>
-                                    <Text as="h3" textStyle="h3" my="0">
-                                        About me
-                                    </Text>
+                                    <Link href="#portfolio" onClick={onToggle}>
+                                        <Text as="h3" textStyle="h3" my="0">
+                                            Portfolio
+                                        </Text>
+                                    </Link>
+                                    <Link href="#about" onClick={onToggle}>
+                                        <Text as="h3" textStyle="h3" my="0">
+                                            About me
+                                        </Text>
+                                    </Link>
                                 </Stack>
                                 <Divider borderColor="typography.secondary" mt="24" mb="16" />
                                 <Stack spacing="8" direction="column" alignItems="center" justifyContent="center">

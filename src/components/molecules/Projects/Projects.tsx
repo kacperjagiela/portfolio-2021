@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
                         </Box>
                         <Project
                             name="This portfolio 😁"
-                            imageSrc="/images.png"
+                            imageSrc="/images/portfolio-2021.png"
                             size={isDesktop ? 'large' : 'mobile'}
                             tags={['React', 'TypeScript', 'Chakra UI']}
                             link="https://github.com/kacperjagiela"
